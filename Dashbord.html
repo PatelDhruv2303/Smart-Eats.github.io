@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - SmartEats</title>
+  <link rel="stylesheet" href="Css/Dashbord.css">
+  <link rel="stylesheet" href="css/Styles.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-container" style="display: flex; align-items: center; justify-content: center;">
+      <div class="logo-icon">🍴</div>
+      <h1>SmartEats</h1>
+    </div>
+    <nav class="main-nav">
+      <a href="Dashbord.html" class="active">Dashboard</a>
+      <a href="Recipe.html">Recipes</a>
+      <a href="recipe_filter.html">Recipe Filter</a>
+      <a href="MealPlan.html">Meal Plans</a>
+      
+    </nav>
+    <div class="header-actions">
+      <div class="search-container">
+        <input type="text" placeholder="Search" class="search-input">
+        <span class="search-icon"></span>
+      </div>
+      <button class="notification-btn"></button>
+      <div class="profile-menu" onclick="toggleProfileMenu()">
+        <img src="ben-den-engelsen-YUu9UAcOKZ4-unsplash.jpg" alt="Profile" class="profile-image">
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-container">
+    <section class="calories-section">
+      <h2>Calories for today</h2>
+      <p class="calorie-status">You've consumed <span class="percentage">70%</span> of your goal of <span class="calorie-goal">2,000</span> calories.</p>
+      <div class="progress-container">
+        <div class="progress-bar" style="width: 70%"></div>
+      </div>
+      <p class="calories-remaining">600 calories remaining</p>
+    </section>
+    
+    <section class="today-meals">
+      <h2>Today's meals</h2>
+      <div class="meal-cards">
+        <div class="meal-card">
+          <div class="meal-image breakfast-image"></div>
+          <div class="meal-info">
+            <h3>Breakfast</h3>
+            <p>Oatmeal with blueberries</p>
+          </div>
+        </div>
+        <div class="meal-card">
+          <div class="meal-image lunch-image"></div>
+          <div class="meal-info">
+            <h3>Lunch</h3>
+            <p>Grilled chicken salad</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="ai-suggestions">
+      <h2>AI suggestions</h2>
+      
+      <div class="suggestion-card">
+        <div class="suggestion-content">
+          <p class="suggestion-tag">Eat this to meet your goal</p>
+          <h3>Quinoa Salad</h3>
+          <p class="suggestion-description">This salad is high in protein and fiber, and low in saturated fat. It's a great choice for lunch.</p>
+          <button class="btn-secondary add-meal-btn">Add to meal</button>
+        </div>
+        <div class="suggestion-image quinoa-image"></div>
+      </div>
+      
+      <div class="suggestion-card">
+        <div class="suggestion-content">
+          <p class="suggestion-tag">Eat this to meet your goal</p>
+          <h3>Peanut Butter and Banana Toast</h3>
+          <p class="suggestion-description">This snack is high in protein and fiber, and low in saturated fat. It's a great choice for an afternoon pick-me-up.</p>
+          <button class="btn-secondary add-meal-btn">Add to meal</button>
+        </div>
+        <div class="suggestion-image toast-image"></div>
+      </div>
+    </section>
+    
+    <section class="device-sync">
+      <h2>Device sync status</h2>
+      <div class="device-list">
+        <div class="device-item">
+          <div class="device-icon fitbit-icon"></div>
+          <div class="device-info">
+            <h3>Fitbit</h3>
+            <p>Last synced: 5 minutes ago</p>
+          </div>
+        </div>
+        <div class="device-item">
+          <div class="device-icon apple-health-icon"></div>
+          <div class="device-info">
+            <h3>Apple Health</h3>
+            <p>Last synced: 2 hours ago</p>
+          </div>
+        </div>
+        <div class="device-item">
+          <div class="device-icon garmin-icon"></div>
+          <div class="device-info">
+            <h3>Garmin Connect</h3>
+            <p>Last synced: 3 days ago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="action-buttons">
+    <button class="btn-primary log-meal-btn">Log Meal</button>
+    <button class="btn-secondary upgrade-btn">Upgrade</button>
+  </div>
+
+  <script src="Dashbord.js"></script>
+</body>
+</html>

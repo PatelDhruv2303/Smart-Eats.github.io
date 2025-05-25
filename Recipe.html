@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chicken Cobb Salad - SmartEats</title>
+  <link rel="stylesheet" href="css/Styles.css">
+  <link rel="stylesheet" href="Css/Recipe.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-container">
+      <div class="logo-icon"></div>
+      <h1>SmartEats</h1>
+    </div>
+    <nav class="main-nav">
+      <a href="Dashbord.html">Dashboard</a>
+      <a href="Recipe.html" class="active">Recipes</a>
+      <a href="recipe_filter.html">Recipe Filter</a>
+      <a href="MealPlan.html">Meal Plans</a>
+      
+    </nav>
+    <div class="header-actions">
+      <div class="search-container">
+        <input type="text" placeholder="Search" class="search-input">
+        <span class="search-icon"></span>
+      </div>
+      <button class="notification-btn"></button>
+      <div class="profile-menu" onclick="toggleProfileMenu()">
+        <img src="ben-den-engelsen-YUu9UAcOKZ4-unsplash.jpg" alt="Profile" class="profile-image">
+      </div>
+    </div>
+  </header>
+
+  <main class="recipe-container">
+    <div class="recipe-header">
+      <button class="back-button" onclick="window.history.back()">← Back</button>
+      <div class="recipe-actions">
+        <button class="btn-icon save-recipe"></button>
+        <button class="btn-icon share-recipe"></button>
+      </div>
+    </div>
+    
+    <div class="recipe-hero">
+      <div class="recipe-image cobb-salad-full"></div>
+      <div class="recipe-info">
+        <h1>Chicken Cobb Salad</h1>
+        <div class="recipe-meta">
+          <span class="prep-time">Prep: 15 min</span>
+          <span class="cook-time">Cook: 20 min</span>
+          <span class="total-time">Total: 35 min</span>
+          <span class="servings">Serves: 2</span>
+        </div>
+        <div class="recipe-macros">
+          <div class="macro">
+            <span class="macro-value">20g</span>
+            <span class="macro-label">Protein</span>
+          </div>
+          <div class="macro">
+            <span class="macro-value">15g</span>
+            <span class="macro-label">Fat</span>
+          </div>
+          <div class="macro">
+            <span class="macro-value">10g</span>
+            <span class="macro-label">Carbs</span>
+          </div>
+          <div class="macro">
+            <span class="macro-value">320</span>
+            <span class="macro-label">Calories</span>
+          </div>
+        </div>
+        <div class="recipe-actions-mobile">
+          <button class="btn-primary add-to-plan">Add to Meal Plan</button>
+          <button class="btn-secondary add-to-grocery">Add to Grocery List</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="recipe-content">
+      <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul class="ingredients-list">
+          <li>
+            <input type="checkbox" id="ingredient-1">
+            <label for="ingredient-1">2 boneless, skinless chicken breasts</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ingredient-2">
+            <label for="ingredient-2">6 cups romaine lettuce, chopped</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ingredient-3">
+            <label for="ingredient-3">2 hard-boiled eggs, sliced</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ingredient-4">
+            <label for="ingredient-4">1 avocado, diced</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ingredient-5">
+            <label for="ingredient-5">1/2 cup cherry tomatoes, halved</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ingredient-6">
+            <label for="ingredient-6">1/4 cup blue cheese, crumbled</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ingredient-7">
+            <label for="ingredient-7">4 strips bacon, cooked and crumbled</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ingredient-8">
+            <label for="ingredient-8">1/4 cup red onion, thinly sliced</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ingredient-9">
+            <label for="ingredient-9">1/4 cup olive oil</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ingredient-10">
+            <label for="ingredient-10">2 tablespoons red wine vinegar</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ingredient-11">
+            <label for="ingredient-11">1 teaspoon Dijon mustard</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ingredient-12">
+            <label for="ingredient-12">Salt and pepper to taste</label>
+          </li>
+        </ul>
+      </section>
+      
+      <section class="instructions">
+        <h2>Instructions</h2>
+        <ol class="instructions-list">
+          <li>Season chicken breasts with salt and pepper. Grill until fully cooked, about 6-7 minutes per side. Let cool, then slice.</li>
+          <li>In a small bowl, whisk together olive oil, red wine vinegar, Dijon mustard, salt, and pepper to make the dressing.</li>
+          <li>In a large bowl, arrange the romaine lettuce as the base.</li>
+          <li>Arrange sliced chicken, hard-boiled eggs, avocado, cherry tomatoes, blue cheese, bacon, and red onion in rows on top of the lettuce.</li>
+          <li>Drizzle the dressing over the salad just before serving.</li>
+          <li>Toss gently and serve immediately.</li>
+        </ol>
+      </section>
+      
+      <section class="nutrition-info">
+        <h2>Nutrition Information</h2>
+        <div class="nutrition-details">
+          <div class="nutrition-item">
+            <span class="nutrient">Calories</span>
+            <span class="value">320</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrient">Total Fat</span>
+            <span class="value">15g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrient">Saturated Fat</span>
+            <span class="value">3.5g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrient">Cholesterol</span>
+            <span class="value">95mg</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrient">Sodium</span>
+            <span class="value">480mg</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrient">Total Carbohydrates</span>
+            <span class="value">10g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrient">Dietary Fiber</span>
+            <span class="value">4g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrient">Sugars</span>
+            <span class="value">3g</span>
+          </div>
+          <div class="nutrition-item">
+            <span class="nutrient">Protein</span>
+            <span class="value">20g</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <section class="similar-recipes">
+      <h2>You Might Also Like</h2>
+      <div class="recipe-suggestions">
+        <div class="suggestion-card" onclick="viewRecipe('salmon-caesar-salad')">
+          <div class="suggestion-image salmon-salad-image"></div>
+          <h3>Salmon Caesar Salad</h3>
+        </div>
+        <div class="suggestion-card" onclick="viewRecipe('quinoa-spinach-bowl')">
+          <div class="suggestion-image quinoa-bowl-image"></div>
+          <h3>Quinoa Spinach Bowl</h3>
+        </div>
+        <div class="suggestion-card" onclick="viewRecipe('turkey-avocado-wrap')">
+          <div class="suggestion-image turkey-wrap-image"></div>
+          <h3>Turkey Avocado Wrap</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="Recipe.js"></script>
+</body>
+</html>

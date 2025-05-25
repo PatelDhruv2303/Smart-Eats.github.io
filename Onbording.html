@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Personalize Your Nutrition - SmartEats</title>
+  <link rel="stylesheet" href="Css/Styles.css">
+  <link rel="stylesheet" href="Css/Onbording.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <div class="logo-icon"></div>
+      <h1>SmartEats</h1>
+    </div>
+  </header>
+
+  <main class="onboarding-container">
+    <h2>Let's personalize your nutrition!</h2>
+    <p class="subtitle">We'll use this information to recommend the best meals for you.</p>
+    
+    <div class="diet-preferences">
+      <div class="preference-card" onclick="selectPreference(this, 'fruits')">
+        <div class="preference-image fruits-image"></div>
+      </div>
+      <div class="preference-card" onclick="selectPreference(this, 'meat')">
+        <div class="preference-image meat-image"></div>
+      </div>
+    </div>
+    
+    <button class="btn-primary get-started-btn" onclick="window.location.href='Dashbord.html'">Get Started</button>
+  </main>
+
+  <script src="Onbording.html"></script>
+</body>
+</html>

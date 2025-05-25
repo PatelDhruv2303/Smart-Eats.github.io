@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Plan - SmartEats</title>
+  <link rel="stylesheet" href="Css/Styles.css">
+  <link rel="stylesheet" href="css/MealPlan.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-container">
+      <div class="logo-icon"></div>
+      <h1>SmartEats</h1>
+    </div>
+    <nav class="main-nav">
+      <a href="Dashbord.html">Dashboard</a>
+      <a href="Recipe.html">Recipes</a>
+      <a href="recipe_filter.html">Recipe Filter</a>
+      <a href="MealPlan.html" class="active">Meal Plans</a>
+    
+    </nav>
+    <div class="header-actions">
+      <div class="search-container">
+        <input type="text" placeholder="Search" class="search-input">
+        <span class="search-icon"></span>
+      </div>
+      <button class="notification-btn"></button>
+      <div class="profile-menu" onclick="toggleProfileMenu()">
+        <img src="ben-den-engelsen-YUu9UAcOKZ4-unsplash.jpg" alt="Profile" class="profile-image">
+      </div>
+    </div>
+  </header>
+
+  <main class="meal-plan-container">
+    <section class="meal-plan-header">
+      <h2>Your Meal Plan</h2>
+      <p class="meal-plan-date">Week of June 23, 2022</p>
+    </section>
+    
+    <section class="meal-plan-stats">
+      <div class="stat-card">
+        <h3 class="stat-number">3</h3>
+        <p class="stat-label">Meals</p>
+      </div>
+      <div class="stat-card">
+        <h3 class="stat-number">5</h3>
+        <p class="stat-label">Snacks</p>
+      </div>
+      <div class="stat-card">
+        <h3 class="stat-number">1</h3>
+        <p class="stat-label">Supplements</p>
+      </div>
+      <div class="stat-card">
+        <h3 class="stat-number">2</h3>
+        <p class="stat-label">Water</p>
+      </div>
+    </section>
+    
+    <section class="suggested-meals">
+      <h2>Suggested Meals</h2>
+      <div class="meal-grid">
+        <div class="meal-item" onclick="viewRecipe('chicken-cobb-salad')">
+          <div class="meal-item-image cobb-salad-image"></div>
+          <h3>Chicken Cobb Salad</h3>
+          <p class="meal-macros">Protein: 20g | Fat: 15g | Carbs: 10g</p>
+        </div>
+        <div class="meal-item" onclick="viewRecipe('tofu-stir-fry')">
+          <div class="meal-item-image tofu-stir-fry-image"></div>
+          <h3>Tofu Veggie Stir Fry</h3>
+          <p class="meal-macros">Protein: 25g | Fat: 12g | Carbs: 20g</p>
+        </div>
+        <div class="meal-item" onclick="viewRecipe('greek-yogurt-parfait')">
+          <div class="meal-item-image greek-yogurt-image"></div>
+          <h3>Greek Yogurt Parfait</h3>
+          <p class="meal-macros">Protein: 15g | Fat: 5g | Carbs: 25g</p>
+        </div>
+        <div class="meal-item" onclick="viewRecipe('turkey-avocado-wrap')">
+          <div class="meal-item-image turkey-wrap-image"></div>
+          <h3>Turkey Avocado Wrap</h3>
+          <p class="meal-macros">Protein: 18g | Fat: 10g | Carbs: 15g</p>
+        </div>
+        <div class="meal-item" onclick="viewRecipe('quinoa-spinach-bowl')">
+          <div class="meal-item-image quinoa-bowl-image"></div>
+          <h3>Quinoa Spinach Bowl</h3>
+          <p class="meal-macros">Protein: 22g | Fat: 8g | Carbs: 18g</p>
+        </div>
+        <div class="meal-item" onclick="viewRecipe('salmon-caesar-salad')">
+          <div class="meal-item-image salmon-salad-image"></div>
+          <h3>Salmon Caesar Salad</h3>
+          <p class="meal-macros">Protein: 24g | Fat: 14g | Carbs: 12g</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="habits-tracker">
+      <h2>Habits to Track</h2>
+      <div class="habits-list">
+        <div class="habit-item">
+          <input type="checkbox" id="vitamin-d" class="habit-checkbox">
+          <label for="vitamin-d">Vitamin D</label>
+        </div>
+        <div class="habit-item">
+          <input type="checkbox" id="omega-3" class="habit-checkbox">
+          <label for="omega-3">Omega-3</label>
+        </div>
+        <div class="habit-item">
+          <input type="checkbox" id="probiotics" class="habit-checkbox" checked>
+          <label for="probiotics">Probiotics</label>
+        </div>
+        <div class="habit-item">
+          <input type="checkbox" id="multivitamin" class="habit-checkbox" checked>
+          <label for="multivitamin">Multivitamin</label>
+        </div>
+        <div class="habit-item">
+          <input type="checkbox" id="collagen" class="habit-checkbox">
+          <label for="collagen">Collagen</label>
+        </div>
+      </div>
+    </section>
+    
+    <section class="meal-visuals">
+      <h2>Meal Visuals</h2>
+      <div class="visual-gallery">
+        <div class="gallery-item bowl-1-image"></div>
+        <div class="gallery-item bowl-2-image"></div>
+        <div class="gallery-item bowl-3-image"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="MealPlan.js"></script>
+</body>
+</html>

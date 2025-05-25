@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartEats - Personalized Nutrition</title>
+  <link rel="stylesheet" href="Css/Styles.css">
+  <link rel="stylesheet" href="Css/Auth.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <div class="logo-icon"></div>
+      <h1>SmartEats</h1>
+    </div>
+  </header>
+
+  <main class="auth-container">
+    <div class="hero-image"></div>
+    
+    <div class="auth-content">
+      <h2>Welcome to SmartEats!</h2>
+      <p>Log in or sign up to start your personalized nutrition journey</p>
+      
+      <form id="loginForm" class="auth-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="example@gmail.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Password" required>
+        </div>
+        
+        <button type="submit" class="btn-primary" onclick="login(event)">Log in</button>
+      </form>
+      
+      <a href="#" class="forgot-password">Forgot password?</a>
+      
+      <div class="auth-divider">
+        <span>Or log in with</span>
+      </div>
+      
+      <div class="social-auth">
+        <button class="btn-social btn-google" onclick="socialLogin('google')">Google</button>
+        <button class="btn-social btn-apple" onclick="socialLogin('apple')">Apple</button>
+      </div>
+      
+      <p class="signup-prompt">
+        Don't have an account? <a href="#" onclick="toggleForm(event)">Sign up</a>
+      </p>
+    </div>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>

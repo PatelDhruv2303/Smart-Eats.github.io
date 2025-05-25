@@ -1,0 +1,244 @@
+/* Dashboard Styles */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-6);
+}
+
+.calories-section {
+  margin-bottom: var(--spacing-8);
+}
+
+.calories-section h2 {
+  margin-bottom: var(--spacing-3);
+}
+
+.calorie-status {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-3);
+}
+
+.percentage {
+  color: var(--primary);
+  font-weight: 600;
+  margin: 0 var(--spacing-1);
+}
+
+.calorie-goal {
+  font-weight: 600;
+}
+
+.progress-container {
+  height: 10px;
+  background-color: var(--gray-200);
+  border-radius: var(--border-radius-full);
+  margin-bottom: var(--spacing-2);
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: var(--border-radius-full);
+  transition: width var(--transition-normal) ease;
+}
+
+.calories-remaining {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  text-align: right;
+}
+
+.today-meals {
+  margin-bottom: var(--spacing-8);
+}
+
+.meal-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-4);
+}
+
+.meal-card {
+  display: flex;
+  background-color: var(--gray-100);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+}
+
+.meal-image {
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+}
+
+.breakfast-image {
+  background-image: url('https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.lunch-image {
+  background-image: url('https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.meal-info {
+  padding: var(--spacing-4);
+}
+
+.meal-info h3 {
+  margin-bottom: var(--spacing-1);
+}
+
+.meal-info p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.ai-suggestions {
+  margin-bottom: var(--spacing-8);
+}
+
+.suggestion-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--gray-100);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  margin-bottom: var(--spacing-4);
+}
+
+.suggestion-content {
+  padding: var(--spacing-4);
+  flex: 1;
+}
+
+.suggestion-tag {
+  font-size: var(--font-size-xs);
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-2);
+}
+
+.suggestion-content h3 {
+  margin-bottom: var(--spacing-2);
+}
+
+.suggestion-description {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-4);
+}
+
+.suggestion-image {
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.quinoa-image {
+  background-image: url('https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.toast-image {
+  background-image: url('https://images.pexels.com/photos/1656665/pexels-photo-1656665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.device-sync h2 {
+  margin-bottom: var(--spacing-4);
+}
+
+.device-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing-4);
+}
+
+.device-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--gray-100);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-4);
+}
+
+.device-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: var(--spacing-4);
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.device-info h3 {
+  margin-bottom: 0;
+  font-size: var(--font-size-md);
+}
+
+.device-info p {
+  font-size: var(--font-size-xs);
+  color: var(--text-light);
+  margin: 0;
+}
+
+.action-buttons {
+  position: fixed;
+  bottom: var(--spacing-6);
+  right: var(--spacing-6);
+  display: flex;
+  gap: var(--spacing-4);
+}
+
+.log-meal-btn, .upgrade-btn {
+  padding: var(--spacing-3) var(--spacing-6);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .suggestion-card {
+    flex-direction: column-reverse;
+  }
+  
+  .suggestion-image {
+    width: 100%;
+    height: 160px;
+  }
+  
+  .action-buttons {
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    padding: var(--spacing-4);
+    background-color: var(--white);
+    border-top: 1px solid var(--gray-200);
+    justify-content: space-around;
+  }
+  
+  .log-meal-btn, .upgrade-btn {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    padding: var(--spacing-4);
+  }
+  
+  .meal-card {
+    flex-direction: column;
+  }
+  
+  .meal-image {
+    width: 100%;
+    height: 140px;
+  }
+  
+  .device-list {
+    grid-template-columns: 1fr;
+  }
+}
